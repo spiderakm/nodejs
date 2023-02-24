@@ -45,12 +45,28 @@
 // console.log(hobies)
 
 ///task
-const fruits = ['apple', 'oranges' , '', 'mango', '' , 'lemon']
-console.log(fruits.map(fruit => {
-    if(fruit.length === 0){
-        fruit = 'empty string'
+// const fruits = ['apple', 'oranges' , '', 'mango', '' , 'lemon']
+// console.log(fruits.map(fruit => {
+//     if(fruit.length === 0){
+//         fruit = 'empty string'
 
-    }
-    return fruit
+//     }
+//     return fruit
     
-}))
+// }))
+
+
+//destructors
+const person = {
+    name:'ashok',
+    age:23,
+    great(){
+        console.log(this.name)
+    }
+}
+
+const printName = ({ name }) => {
+    console.log(name)
+}
+
+printName(person)
