@@ -1,0 +1,25 @@
+{
+  "name": "startnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "routes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spiderakm/nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spiderakm/nodejs/issues"
+  },
+  "homepage": "https://github.com/spiderakm/nodejs#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
