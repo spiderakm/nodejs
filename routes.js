@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-const requestHandler = (req,res) => {
+const requestHandler = (res,res) => {
     const url = req.url;
     const method = req.method;
     if (url === '/') {
@@ -30,7 +30,7 @@ const requestHandler = (req,res) => {
         });
         return req.on('end',() => {
             const bodyParser = Buffer.concat(body).toString();
-            const message = bodyParser.split("=")[1]
+            const message = bodyParser.split("=")[0]
             fs.writeFileSync('message.txt', message,(err) => {
                 res.statusCode = 302;
                 res.setHeader('Location', '/');
